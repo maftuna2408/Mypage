@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Orqa fon rangi */
+            font-family: Arial, sans-serif;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Website!</h1>
@@ -11,6 +50,7 @@
 
     <h2>About Me</h2>
     <p>I am learning web development and this is an example of a simple webpage.</p>
+    <img src="https://via.placeholder.com/300" alt="A placeholder image">
 
     <h3>My Hobbies</h3>
     <ul>
@@ -19,7 +59,29 @@
         <li>Traveling</li>
     </ul>
 
+    <h3>Favorite Places</h3>
+    <table>
+        <tr>
+            <th>Place</th>
+            <th>Reason</th>
+        </tr>
+        <tr>
+            <td>Paris</td>
+            <td>Beautiful architecture and art</td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>High-tech and unique culture</td>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>Vibrant city life</td>
+        </tr>
+    </table>
+
     <h3>Contact Me</h3>
     <a href="mailto:example@example.com">Send me an email</a>
+    <br><br>
+    <button onclick="alert('Thank you for clicking!')">Click Me</button>
 </body>
 </html>
